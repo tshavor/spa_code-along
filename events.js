@@ -8,7 +8,7 @@ CarLot = (function(carLot) {
         userInput.focus()
         CarLot.resetCards(cards)
         CarLot.styleCard(card, "pink")
-        CarLot.mirrorText(card)
+        CarLot.mirrorText(card, userInput)
       })
     })
   }
