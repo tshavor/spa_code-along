@@ -1,0 +1,7 @@
+{
+  "name": "spa_code_along",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

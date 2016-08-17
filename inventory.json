@@ -1,0 +1,31 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Mazda",
+      "model": "RX8",
+      "year": "2006",
+      "price": "300",
+      "color": "Blue",
+      "purchased": false,
+      "description": "Wheels not included."
+    },
+    {
+      "make": "Ford",
+      "model": "Pinto",
+      "year": "1973",
+      "price": "100",
+      "color": "Tomato",
+      "purchased": false,
+      "description": "Caution!  Occasionaly bursts into flames."
+    }
+  ]
+}
