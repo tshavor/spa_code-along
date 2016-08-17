@@ -26,6 +26,33 @@
       "color": "Tomato",
       "purchased": false,
       "description": "Caution!  Occasionaly bursts into flames."
+    },
+    {
+      "make": "Ford",
+      "model": "Pinto",
+      "year": "1973",
+      "price": "100",
+      "color": "Tomato",
+      "purchased": false,
+      "description": "Caution!  Occasionaly bursts into flames."
+    },
+    {
+      "make": "Ford",
+      "model": "Pinto",
+      "year": "1973",
+      "price": "100",
+      "color": "Tomato",
+      "purchased": false,
+      "description": "Caution!  Occasionaly bursts into flames."
+    },
+    {
+      "make": "Ford",
+      "model": "Pinto",
+      "year": "1973",
+      "price": "100",
+      "color": "Tomato",
+      "purchased": false,
+      "description": "Caution!  Occasionaly bursts into flames."
     }
   ]
 }
