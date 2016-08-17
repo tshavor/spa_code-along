@@ -1,7 +1,7 @@
 CarLot = (function(carLot){
   carLot.resetCards = function(cards){
     cards.forEach(function(card){
-      card.classList.remove("styleCard")
+      card.classList.remove("pink")
     })
   }
   carLot.styleCard = function(card, pink){
