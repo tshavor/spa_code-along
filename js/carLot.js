@@ -1,22 +1,26 @@
 "use strict";
 
 // var CarLot = (function () {
-  var carInventory = require ('./carLotPromises');
-  var eventStuff = require ('./events');
-  // var inventory = [];
+  // var eventStuff = require ('./events');
+  var inventory = [];
 
   // return {
-    var getInventory: function () {
+    var getInventory = function () {
       return inventory;
-    },
-    loadInventory: function (callback) {
-      var inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.open("GET", "inventory.json");
-      inventoryLoader.addEventListener("load", function () {
-        inventory = JSON.parse(this.responseText).cars;
-        callback(inventory);
-      });
-      inventoryLoader.send();
+    };
+    var loadInventory = function () {
+      return new Promise(function (resolve, reject){
+
+       // this is the promise
+        var inventoryLoader = new XMLHttpRequest();
+        inventoryLoader.open("GET", "inventory.json");
+        inventoryLoader.send();
+
+        inventoryLoader.addEventListener("load", function () {
+          inventory = JSON.parse(this.responseText).cars;
+          resolve(inventory);
+        });
+      })
     }
   // };
 

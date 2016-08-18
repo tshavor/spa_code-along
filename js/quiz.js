@@ -1,11 +1,11 @@
 "use strict";
 
 var carInventory= require('./CarLot');
-var eventStuff= require(',/events');
+var eventStuff= require('./events');
 
 
 // (function(){
-  function populatePage (inventory) {
+  var populatePage = function (inventory) {
     var output = document.querySelector(".output");
     var results = "";
     inventory.forEach(function(car, i){
@@ -24,15 +24,17 @@ var eventStuff= require(',/events');
       </div>
       `
       if ((i + 1) % 3 === 0) {
-    results += `</div>`
+    results += `</div>`;
     }
     });
     output.innerHTML = results;
 
-    eventStuff ();
+    eventStuff();
   }
 
 module.exports = {populatePage};
 
-//   CarLot.loadInventory(populatePage);
+  carInventory.loadInventory().then(function(data){
+    populatePage(data);
+  });
 // })();

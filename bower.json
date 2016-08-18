@@ -3,5 +3,19 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.0"
-  }
+  },
+  "homepage": "https://github.com/tshavor/spa_code-along",
+  "authors": [
+    "Thomas J. Shavor <thomasshavor@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

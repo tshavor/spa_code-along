@@ -9,9 +9,9 @@
         var userInput = document.querySelector("#userInput");
         userInput.value = "";
         userInput.focus();
-        resetCards(cards);;
-        styleCard(card, "pink");
-        mirrorText(card, userInput);
+        cardStyles.resetCards(cards);;
+        cardStyles.styleCard(card, "pink");
+        cardStyles.mirrorText(card, userInput);
       });
     });
   };
