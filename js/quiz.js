@@ -1,13 +1,13 @@
 "use strict";
 
-var carInventory= require('./carLotPromises'),
-event stuff= require(',/events');
+var carInventory= require('./CarLot');
+var eventStuff= require(',/events');
 
 
 // (function(){
   function populatePage (inventory) {
-    var output = document.querySelector(".output")
-    var results = ""
+    var output = document.querySelector(".output");
+    var results = "";
     inventory.forEach(function(car, i){
       if (i % 3 === 0) {
       results += `<div class="row">`
@@ -26,11 +26,13 @@ event stuff= require(',/events');
       if ((i + 1) % 3 === 0) {
     results += `</div>`
     }
-    })
-    output.innerHTML = results
+    });
+    output.innerHTML = results;
 
-    CarLot.activateEvents();
+    eventStuff ();
   }
 
-  CarLot.loadInventory(populatePage);
-})();
+module.exports = {populatePage};
+
+//   CarLot.loadInventory(populatePage);
+// })();
